@@ -61,27 +61,46 @@ Anyways, a brief description of every script can be found in the next chapter.
 
 ## Script list
 
+#### Quick navigation
+- [Powerstate-Report.ps1](#powerstate-reportps1)
+- [Datastores-Report.ps1](#datastores-reportps1)
+- [Get-Portgroups.ps1](#get-portgroupsps1)
+- [Massive-Shutdown.ps1](#massive-shutdownps1)
+
+
 #### Powerstate-Report.ps1
 This script retrieves the power state, uptime and last boot time of all the VMs. It then outputs everything on a nicely formatted HTML table.
 
-*Sample output:*
+<details>
+  <summary>Sample output</summary>
 
 ![Powerstate-Report.ps1](https://user-images.githubusercontent.com/49495410/212378331-50edcb30-9457-47d7-9541-cba832a2249d.png)
 
+  </details>
 
 #### Datastores-Report.ps1
 This script retrieves informations about the datastores in the datacenter, like name, available space, free space percentage, etc. It then outputs everything on a nicely formatted HTML table.
 
-*Sample output:*
+<details>
+  <summary>Sample output</summary>
 
 ![Datastores-Report.ps1](https://user-images.githubusercontent.com/49495410/212378482-30a73ad7-8168-4d98-9052-c4232683ffe3.png)
+
+  </details>
 
 #### Get-Portgroups.ps1
 This script retrieves the list of the portgroups for each vDS. It then outputs everything on a nicely formatted HTML table.
 
-*Sample output:*
+<details>
+  <summary>Sample output</summary>
 
 ![Get-Portgroups.ps1](https://user-images.githubusercontent.com/49495410/212418986-14846a33-b0f1-4618-a110-19f7075aac1f.png)
+
+ </details>
+
+#### Massive-Shutdown.ps1
+This script shuts down every VM it finds in the vCenter, except the vCenter itself (the hostname of the vCenter MUST be specified inside the script).
+As this script doesn't produce any output file, there isn't a *sample output* tab below.
 
 ## Misc
 
