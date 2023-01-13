@@ -1,5 +1,5 @@
 # PowerCLI-SysAdmin-Repo
-A repository of useful PowerCLI for your daily SysAdmin duties
+A repository of useful PowerCLI scripts for your daily SysAdmin duties
 
 ***Note! This repo is currrently W.I.P. - code will be added time to time***
 
