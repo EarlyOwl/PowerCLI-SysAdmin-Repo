@@ -76,6 +76,12 @@ This script retrieves informations about the datastores in the datacenter, like 
 
 ![Datastores-Report.ps1](https://user-images.githubusercontent.com/49495410/212378482-30a73ad7-8168-4d98-9052-c4232683ffe3.png)
 
+#### Get-Portgroups.ps1
+This script retrieves the list of the portgroups for each vDS. It then outputs everything on a nicely formatted HTML table.
+
+*Sample output:*
+
+![Get-Portgroups.ps1](https://user-images.githubusercontent.com/49495410/212418986-14846a33-b0f1-4618-a110-19f7075aac1f.png)
 
 ## Misc
 
