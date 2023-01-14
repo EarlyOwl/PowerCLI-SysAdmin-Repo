@@ -66,6 +66,7 @@ Anyways, a brief description of every script can be found in the next chapter.
 - [Datastores-Report.ps1](#datastores-reportps1)
 - [Get-Portgroups.ps1](#get-portgroupsps1)
 - [Massive-Shutdown.ps1](#massive-shutdownps1)
+- [Vmwaretools-Report.ps1](#vmwaretools-reportps1)
 
 
 #### Powerstate-Report.ps1
@@ -76,7 +77,7 @@ This script retrieves the power state, uptime and last boot time of all the VMs.
 
 ![Powerstate-Report.ps1](https://user-images.githubusercontent.com/49495410/212378331-50edcb30-9457-47d7-9541-cba832a2249d.png)
 
-  </details>
+</details>
 
 #### Datastores-Report.ps1
 This script retrieves informations about the datastores in the datacenter, like name, available space, free space percentage, etc. It then outputs everything on a nicely formatted HTML table.
@@ -86,7 +87,7 @@ This script retrieves informations about the datastores in the datacenter, like 
 
 ![Datastores-Report.ps1](https://user-images.githubusercontent.com/49495410/212378482-30a73ad7-8168-4d98-9052-c4232683ffe3.png)
 
-  </details>
+</details>
 
 #### Get-Portgroups.ps1
 This script retrieves the list of the portgroups for each vDS. It then outputs everything on a nicely formatted HTML table.
@@ -96,11 +97,21 @@ This script retrieves the list of the portgroups for each vDS. It then outputs e
 
 ![Get-Portgroups.ps1](https://user-images.githubusercontent.com/49495410/212418986-14846a33-b0f1-4618-a110-19f7075aac1f.png)
 
- </details>
+</details>
 
 #### Massive-Shutdown.ps1
 This script shuts down every VM it finds in the vCenter, except the vCenter itself (the hostname of the vCenter MUST be specified inside the script).
 As this script doesn't produce any output file, there isn't a *sample output* tab below.
+
+#### Vmwaretools-Report.ps1
+This script enumerates all the VMs and verifies whether or not they have Vmware Tools installed (and if so, it checks the current version). It then outputs everything on a nicely formatted HTML table.
+
+<details>
+  <summary>Sample output</summary>
+
+![Vmwaretools-Report.ps1](https://user-images.githubusercontent.com/49495410/212491428-e5189ac4-c3f4-4d9a-80fa-7f7fe739c9c4.png)
+
+</details>
 
 ## Misc
 
