@@ -38,9 +38,9 @@ There are several ways to retrieve the scripts. For example, you can either:
 
 - Download the whole branch as a .ZIP archive by clicking ***Code > Download ZIP*** (or [here](https://github.com/EarlyOwl/PowerCLI-SysAdmin-Repo/archive/refs/heads/main.zip))
 
-- Download a single script directly from the PowerShell. For example, to download the script ***Powerstate-Report.ps1*** you can use the following snippet: 
+- Download a single script directly from the PowerShell. For example, to download the script ***Powerstate-Report.ps1*** you can use the following snippet:
 ```shell
-Invoke-WebRequest -URI https://raw.githubusercontent.com/EarlyOwl/PowerCLI-SysAdmin-Repo/main/scripts/Powerstate-Report.ps1 -Outfile Powerstate-Report.ps1 
+Invoke-WebRequest -URI https://raw.githubusercontent.com/EarlyOwl/PowerCLI-SysAdmin-Repo/main/scripts/Powerstate-Report.ps1 -Outfile Powerstate-Report.ps1
 ```
 
 **REMEMBER:** you should adjust the connection parameters in the scripts to fit your environment!
@@ -66,6 +66,7 @@ Anyways, a brief description of every script can be found in the next chapter.
 - [Datastores-Report.ps1](#datastores-reportps1)
 - [Get-Portgroups.ps1](#get-portgroupsps1)
 - [Massive-Shutdown.ps1](#massive-shutdownps1)
+- [Massive-GracefulShutdown.ps1](#massive-gracefulshutdownps1)
 - [Vmwaretools-Report.ps1](#vmwaretools-reportps1)
 
 
@@ -100,7 +101,11 @@ This script retrieves the list of the portgroups for each vDS. It then outputs e
 </details>
 
 #### Massive-Shutdown.ps1
-This script shuts down every VM it finds in the vCenter, except the vCenter itself (the hostname of the vCenter MUST be specified inside the script).
+This script shuts down every VM it finds in the vCenter, except the vCenter itself. The hostname of the vCenter MUST be specified inside the script.
+As this script doesn't produce any output file, there isn't a *sample output* tab below.
+
+#### Massive-Gracefulshutdown.ps1
+This script gracefully shuts down (so using "Shut down guest OS") every VM it finds in the vCenter, except the vCenter itself. The hostname of the vCenter MUST be specified inside the script.
 As this script doesn't produce any output file, there isn't a *sample output* tab below.
 
 #### Vmwaretools-Report.ps1
