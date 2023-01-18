@@ -1,6 +1,6 @@
 # Script developed by Edoardo Amitrano (GitHub: EarlyOwl),
 # using information and code provided by OpenAI's ChatGPT on 17/01/2023 (https://openai.com/)
-# ver 1.0.1 -- This script is licensed under the MIT License
+# ver 1.0.2 -- This script is licensed under the MIT License
 
 # Import VMware PowerCLI module
 Import-Module VMware.PowerCLI
@@ -13,7 +13,7 @@ $vms = Get-VM | Where-Object {$_.Name -ne "VCENTER-HOSTNAME"}
 
 # Power off each VM using "Shut down guest OS"
 foreach ($vm in $vms) {
-  Shutdown-VMGuest -VM $vm -Confirm:$false -RunAsync
+  Shutdown-VMGuest -VM $vm -Confirm:$false
 }
 
 # Disconnect from vCenter server
@@ -24,7 +24,7 @@ Disconnect-VIServer * -Force -Confirm:$false
   Script developed by Edoardo Amitrano (EarlyOwl), using information and code provided by OpenAI's ChatGPT on 17/01/2023 (https://openai.com/)
 
   .DESCRIPTION
-  Massive-Gracefulshutdown.ps1 - ver 1.0.1
+  Massive-Gracefulshutdown.ps1 - ver 1.0.2
   This script gracefully shuts down every VM it founds on the vCenter, except the vCenter itself.
   The vCenter name should be changed to match your environment.
 
