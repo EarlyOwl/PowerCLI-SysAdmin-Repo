@@ -13,7 +13,7 @@ $vms = Get-VM | Where-Object {$_.Name -ne "VCENTER-HOSTNAME"}
 
 # Power off each VM
 foreach ($vm in $vms) {
-        Stop-VM -VM $vm -Confirm:$false -RunAsync
+  Stop-VM -VM $vm -Confirm:$false -RunAsync
 }
 
 # Disconnect from vCenter server
